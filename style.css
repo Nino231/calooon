@@ -18,6 +18,7 @@ body {
   /* background-color: aqua; */
   color: white;
   margin: 2rem;
+  margin-top: 5rem;
 }
 .container-calon-1,
 .container-calon-3 {
@@ -25,6 +26,8 @@ body {
 }
 .container-calon-2 {
   justify-content: end;
+  text-align: right;
+  margin-right: 3rem;
 }
 .urutan {
   font-size: 80px;
@@ -40,7 +43,6 @@ body {
   font-size: 20px;
   font-weight: 400;
 }
-
 .visi-misi-1,
 .visi-misi-2,
 .visi-misi-3 {
@@ -52,15 +54,23 @@ body {
 }
 
 .container-visi-misi-1,
-.container-visi-misi-2,
 .container-visi-misi-3 {
   /* background-color: red; */
   height: fit-content;
   display: flex;
   justify-content: space-between;
-  margin: 3rem;
+  margin: 5rem;
+  margin-right: 10rem;
 }
-
+.container-visi-misi-2 {
+  /* background-color: red; */
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
 footer {
   background-color: black;
   color: white;
@@ -70,7 +80,7 @@ footer {
   display: flex;
 }
 
-@media (width<1024px) {
+@media (width<1025px) {
   body {
     font-size: 65%;
   }
@@ -123,17 +133,22 @@ footer {
     justify-content: center;
     /* background-color: aqua; */
     color: white;
-    margin: 2rem;
+    margin: 1rem;
+    width: auto;
     }
     .container-calon-2{
         flex-direction: row-reverse;
+        margin-right: 0rem;
+        justify-content: center;
+        text-align: left;
+        /* margin-left: 0rem; */
     }
     .urutan {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
       }
     .nama-calon {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         margin: 2rem;
         margin-top: auto;
@@ -151,6 +166,8 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         margin: 1.5rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
     }
     .container-visi-misi-1,
     .container-visi-misi-3{

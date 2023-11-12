@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@500&display=swap&");
+
+@font-face {
+  font-family: "Gotham-bold";
+  src: url(font/GothamBold.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: "Gotham-bold";
+    background: url(img/bismillah-bagus.png);
+    /* height: 2000px; */
+    
+}
+.container-calon-1,
+.container-calon-2,
+.container-calon-3{
+    display: flex;
+    /* background-color: aqua; */
+    color: white;
+    margin: 2rem;
+}
+.container-calon-1,
+.container-calon-3{
+    justify-content: start;
+}
+.container-calon-2{
+    justify-content: end;
+}
+.urutan{
+    font-size: 80px;
+    font-weight: bold;
+}
+.nama-calon{
+    font-size: 55px;
+    font-weight: bold;
+    margin: 2rem;
+    margin-top: auto;
+}
+.jurusan{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.visi-misi-1,
+.visi-misi-2,
+.visi-misi-3{
+    color: white;
+    width: 65%;
+    text-align: justify;
+    margin-left: 2rem;
+    margin-top: -2.5rem;
+}
+
+.container-visi-misi-1,
+.container-visi-misi-2,
+.container-visi-misi-3{
+    /* background-color: red; */
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    text-align: center;
+}

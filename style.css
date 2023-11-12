@@ -1,70 +1,166 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@500&display=swap&");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@500&display=swap&');
 
 @font-face {
-  font-family: "Gotham-bold";
+  font-family: 'Gotham-bold';
   src: url(font/GothamBold.ttf);
 }
 
-body{
-    margin: 0;
-    font-family: "Gotham-bold";
-    background: url(img/bismillah-bagus.png);
-    /* height: 2000px; */
-    
+body {
+  margin: 0;
+  font-family: 'Gotham-bold';
+  background: url(img/bismillah-bagus.png);
+  /* height: 2000px; */
 }
 .container-calon-1,
 .container-calon-2,
-.container-calon-3{
-    display: flex;
-    /* background-color: aqua; */
-    color: white;
-    margin: 2rem;
+.container-calon-3 {
+  display: flex;
+  /* background-color: aqua; */
+  color: white;
+  margin: 2rem;
 }
 .container-calon-1,
-.container-calon-3{
-    justify-content: start;
+.container-calon-3 {
+  justify-content: start;
 }
-.container-calon-2{
-    justify-content: end;
+.container-calon-2 {
+  justify-content: end;
 }
-.urutan{
-    font-size: 80px;
-    font-weight: bold;
+.urutan {
+  font-size: 80px;
+  font-weight: bold;
 }
-.nama-calon{
-    font-size: 55px;
-    font-weight: bold;
-    margin: 2rem;
-    margin-top: auto;
+.nama-calon {
+  font-size: 55px;
+  font-weight: bold;
+  margin: 2rem;
+  margin-top: auto;
 }
-.jurusan{
-    font-size: 20px;
-    font-weight: 400;
+.jurusan {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .visi-misi-1,
 .visi-misi-2,
-.visi-misi-3{
-    color: white;
-    width: 50%;
-    text-align: justify;
-    margin-left: 2rem;
-    margin-top: -2.5rem;
+.visi-misi-3 {
+  color: white;
+  width: 50%;
+  text-align: justify;
+  margin-left: 2rem;
+  margin-top: -2.5rem;
 }
 
 .container-visi-misi-1,
 .container-visi-misi-2,
-.container-visi-misi-3{
+.container-visi-misi-3 {
+  /* background-color: red; */
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+  text-align: center;
+  width: auto;
+  display: flex;
+}
+
+@media (width<1024px) {
+  body {
+    font-size: 65%;
+  }
+  img {
+    width: 250px;
+    justify-content: center;
+  }
+  .urutan {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .nama-calon {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 2rem;
+    margin-top: auto;
+  }
+  .jurusan {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .container-visi-misi-1,
+  .container-visi-misi-2,
+  .container-visi-misi-3 {
     /* background-color: red; */
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    margin: 3rem;
+    margin: 1.5rem;
+  }
+  .visi-misi-1,
+  .visi-misi-2,
+  .visi-misi-3 {
+    color: white;
+    width: 100%;
+    text-align: justify;
+    margin-left: -1rem;
+    margin-top: -2.5rem;
+  }
 }
 
-footer{
-    background-color: black;
+@media (width < 600px){
+    body{
+        font-size: 55%;
+    }
+    .container-calon-1,
+    .container-calon-2,
+    .container-calon-3 {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
     color: white;
-    height: 100px;
-    text-align: center;
-}
+    margin: 2rem;
+    }
+    .container-calon-2{
+        flex-direction: row-reverse;
+    }
+    .urutan {
+        font-size: 50px;
+        font-weight: bold;
+      }
+    .nama-calon {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 2rem;
+        margin-top: auto;
+      }
+    .jurusan {
+        font-size: 10px;
+        font-weight: 400;
+      }
+    .container-visi-misi-1,
+    .container-visi-misi-2,
+    .container-visi-misi-3 {
+        /* background-color: red; */
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 1.5rem;
+    }
+    .container-visi-misi-1,
+    .container-visi-misi-3{
+        flex-direction: column-reverse;
+    }
+    img{
+        width: 150px;
+    }
+    .foto-calon{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
